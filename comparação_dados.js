@@ -3,7 +3,7 @@ const GE = {
 	B: '-',
 	C: '-'
 }
-const 1 = {
+const one = {
 	A: '-',
 	B: '+',
 	C: '-'	
