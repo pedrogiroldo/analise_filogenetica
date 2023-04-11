@@ -6,7 +6,7 @@ const ctx = cnv.getContext('2d');
 const WIDTH = cnv.width
 const HEIGHT = cnv.height
 
-//desenho testes
+//desenho testes penis
 // ctx.beginPath();
 // ctx.strokeStyle = 'red';
 // ctx.moveTo(20, 50);
