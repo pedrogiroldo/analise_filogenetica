@@ -12,8 +12,8 @@ ctx.strokeRect(10, 10, WIDTH, HEIGHT)
 //desenho testes
 ctx.beginPath();
 ctx.strokeStyle = 'red';
-ctx.moveTo(20, 20);
-ctx.lineTo(50, 50);
+ctx.moveTo(20, 50);
+ctx.lineTo(50, 20);
 ctx.stroke();
 
 
