@@ -8,7 +8,7 @@ const HEIGHT = cnv.height;
 /* 
 ==================
 VARIÁVEIS GLOBAIS
-=================
+==================
 */
 const lineLength = Math.sqrt(500000)
 
@@ -61,14 +61,14 @@ function drawCladograma () {
 
     for(let i in animais){
         // Define x e y do primeiro ponto
-        x1 = lineLength / animais.length * (i + 1);
-        console.log((lineLength / animais.length * (i + 1)))
+        x1 = lineLength / (animais.length + 1) * (i + 1);
+        console.log(x1)
         console.log(animais.length)
-        y1 = x1 - 500;
+        y1 = -x1 + 500;
 
         // Define x e y do segundo ponto
-        x2 = 0 - x1;
-        y2 = x2 - 1250
+        x2 = -x1 * Math.sqrt(2);
+        y2 = x2;
 
         ctx.beginPath();
         ctx.moveTo(x1, y1);
