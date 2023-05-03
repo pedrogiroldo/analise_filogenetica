@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet"/>
     <title>Cladograma</title>
 </head>
 <body>
+    <form class="inputForm">
+        <label>Animal 1</label>
+        <input type="text" id="animal-1-input"/>
+        <label>Animal 2</label>
+        <input type="text" id="animal-2-input"/>
+        <label>Animal 3</label>
+        <input type="text" id="animal-3-input"/>
+        <label>Animal 4</label>
+        <input type="text" id="animal-4-input"/>
+
+        <button id="gerar-button">Gerar</button>
+    </form>
+
 
     <h1>Cladograma</h1>
     <canvas id="cladograma" width="500" height="500" style="border: solid;"></canvas>
-    <script src="comparacao_dados.js"></script>
+    <script src="./js/script.js"></script>
     
 </body>
 </html>
