@@ -59,16 +59,24 @@ function drawCladograma () {
     let x2 = '';
     let y2 = '';
 
-    for(let i in animais){
+    for (let i = 0; i < animais.length; i++){
         // Define x e y do primeiro ponto
-        x1 = lineLength / (animais.length + 1) * (i + 1);
-        console.log(x1)
-        console.log(animais.length)
-        y1 = -x1 + 500;
-
+        // if (animais.length === 1) {
+            x1 = WIDTH / (animais.length + 1) * (i + 1);
+            y1 = HEIGHT - (-x1 + 500);
+        // }
+        // else {
+        //     x1 = WIDTH / (animais.length) * (i + 1);
+        //     y1 = HEIGHT - (-x1 + 500);
+        // }
         // Define x e y do segundo ponto
-        x2 = -x1 * Math.sqrt(2);
+        x2 = (((WIDTH / 2) / x1) * 115);
         y2 = x2;
+
+        console.log(x1)
+        console.log(y1)
+        console.log(x2)
+        console.log(y2)
 
         ctx.beginPath();
         ctx.moveTo(x1, y1);
